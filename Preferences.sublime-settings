@@ -1,0 +1,13 @@
+{
+	"close_windows_when_empty": true,
+	"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+	"font_face": "Droid Sans Mono",
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"remember_open_files": false,
+	"tab_size": 2,
+	"theme": "Soda Dark 3.sublime-theme"
+}
