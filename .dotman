@@ -1,0 +1,7 @@
+.conkyrc  /home/tim/.conkyrc
+.bashrc  /home/tim/.bashrc
+autostart  /home/tim/.config/openbox/autostart
+boot.sh  /home/tim/boot.sh
+Preferences.sublime-settings  /home/tim/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+rc.xml  /home/tim/.config/openbox/rc.xml
+.vimrc  /home/tim/.vimrc
