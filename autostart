@@ -5,8 +5,8 @@
 ## you want to run at startup.
 ##
 ## Note*: some programs, such as 'nm-applet' are run via XDG autostart.
-## Run /usr/lib/openbox/openbox-xdg-autostart --list
-## to list XDG autostarted programs.
+## Run '/usr/lib/openbox/openbox-xdg-autostart --list' to list any
+## XDG autostarted programs.
 ##
 ## More information about this can be found at:
 ## http://openbox.org/wiki/Help:Autostart
@@ -15,6 +15,7 @@
 ## could benefit from your hack, please consider sharing it at:
 ## http://crunchbang.org/forums/
 ##
+## Have fun & happy CrunchBangin'! :)
 
 ## GNOME PolicyKit and Keyring
 eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
@@ -81,6 +82,9 @@ cb-cowpowers &
 
 ## Run the conky
 ## conky -q &
+
+## Start pidgin
+pidgin &
 
 ## Run the boot script
 sh ~/boot &
