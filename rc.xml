@@ -375,6 +375,15 @@
         <command>x-www-browser</command>
       </action>
     </keybind>
+    <keybind key="W-s">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Sublime Text 3</name>
+        </startupnotify>
+        <command>subl</command>
+      </action>
+    </keybind>
     <keybind key="W-l">
       <action name="Execute">
         <startupnotify>
