@@ -1,4 +1,5 @@
 #!/bin/bash
+# From: https://github.com/liangcj/AcerC720CrunchBang
 
 # Create a temp directory for our work
 mkdir ~/c720patch

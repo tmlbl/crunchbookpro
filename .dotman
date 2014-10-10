@@ -6,3 +6,4 @@ boot  /home/tim/boot
 Preferences.sublime-settings  /home/tim/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
 rc.xml  /home/tim/.config/openbox/rc.xml
 .vimrc  /home/tim/.vimrc
+sublime-keymap	/home/tim/.config/sublime-text-3/Packages/User/keymap
