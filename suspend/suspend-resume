@@ -1,0 +1,28 @@
+#!/bin/bash
+
+## Fixes suspend and resume on 3.13 kernel for Acer c720
+## From: http://www.reddit.com/r/chrubuntu/comments/1rsxkd/
+## list_of_fixes_for_xubuntu_1310_on_the_acer_c720/ch8eq2o
+
+sudo cp ./unbind_ehci /etc/initramfs-tools/scripts/init-top/unbind_ehci;
+
+## create udev rule /etc/udev/rules.d/10_disable-ehci.rules
+
+ACTION=="add", SUBSYSTEM=="pci", DRIVER=="ehci_hcd", \
+    RUN+="/bin/sh -c 'echo -n %k > %S%p/driver/unbind'";
+
+## update initramfs
+
+sudo update-initramfs -k all -u;
+
+## Script to fix touchpad after resume
+
+sudo cp ./99zcyapa /etc/pm/sleep.d/99zcyapa;
+
+## Change a line in /etc/default/grub
+
+sudo sed -i '/GRUB_CMDLINE_LINUX_DEFAULT/c\GRUB_CMDLINE_LINUX_DEFAULT=" boot=local  i915.modeset=1 tpm_tis.interrupts=0 "' /etc/default/grub;
+
+## Update grub
+
+sudo update-grub2;
